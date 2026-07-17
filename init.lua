@@ -99,7 +99,7 @@ do
   vim.g.maplocalleader = ' '
 
   -- Set to true if you have a Nerd Font installed and selected in the terminal
-  vim.g.have_nerd_font = false
+  vim.g.have_nerd_font = true
 
   -- [[ Setting options ]]
   --  See `:help vim.o`
@@ -693,7 +693,7 @@ do
   ---@type table<string, vim.lsp.Config>
   local servers = {
     -- clangd = {},
-    -- gopls = {},
+    gopls = {},
     -- pyright = {},
     -- rust_analyzer = {},
     --
@@ -701,7 +701,7 @@ do
     --    https://github.com/pmizio/typescript-tools.nvim
     --
     -- But for many setups, the LSP (`ts_ls`) will work just fine
-    -- ts_ls = {},
+    ts_ls = {},
 
     stylua = {}, -- Used to format Lua code
 
@@ -801,7 +801,7 @@ do
       -- python = { "isort", "black" },
       --
       -- You can use 'stop_after_first' to run the first available formatter from the list
-      -- javascript = { "prettierd", "prettier", stop_after_first = true },
+      javascript = { "prettierd", "prettier", stop_after_first = true },
     },
   }
 
@@ -977,6 +977,8 @@ do
   --
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
   -- require 'custom.plugins'
+
+  vim.pack.add { 'https://github.com/vyfor/cord.nvim' }
 end
 
 -- The line beneath this is called `modeline`. See `:help modeline`
