@@ -18,6 +18,8 @@ require('neo-tree').setup {
     },
     filtered_items = {
       visible = true,
+      never_show = { ".git" },
     },
+    use_libuv_file_watcher = true,
   },
 }
