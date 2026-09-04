@@ -16,5 +16,13 @@ require('neo-tree').setup {
         ['\\'] = 'close_window',
       },
     },
+    filtered_items = {
+      always_show = {
+        '.gitignore',
+      },
+      always_show_by_pattern = {
+        '.env*',
+      },
+    },
   },
 }
