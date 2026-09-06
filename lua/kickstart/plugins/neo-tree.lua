@@ -17,11 +17,10 @@ require('neo-tree').setup {
       },
     },
     filtered_items = {
-      always_show = {
-        '.gitignore',
-      },
-      always_show_by_pattern = {
-        '.env*',
+      visible = true,
+      never_show = {
+        '.git',
+        '.DS_Store',
       },
     },
   },
