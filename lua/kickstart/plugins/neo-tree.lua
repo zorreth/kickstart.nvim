@@ -21,6 +21,10 @@ require('neo-tree').setup {
       never_show = {
         '.git',
         '.DS_Store',
+        '.next',
+        '.turbo',
+        '.astro',
+        'node_modules',
       },
     },
   },
