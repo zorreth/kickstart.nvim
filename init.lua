@@ -816,6 +816,7 @@ do
       html = { 'prettier' },
       json = { 'prettier' },
       astro = { 'prettier' },
+      markdown = { 'prettier' },
     },
   }
 
