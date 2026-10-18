@@ -714,6 +714,7 @@ do
     dockerls = {},
     docker_compose_language_service = {},
     gh_actions_ls = {},
+    eslint = {},
     --
     -- Some languages (like typescript) have entire language plugins that can be useful:
     --    https://github.com/pmizio/typescript-tools.nvim
@@ -820,6 +821,7 @@ do
       json = { 'prettier' },
       astro = { 'prettier' },
       markdown = { 'prettier' },
+      yaml = { 'prettier' },
     },
   }
 
