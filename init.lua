@@ -743,6 +743,10 @@ do
     gopls = {},
     pyright = {},
     tsc = {},
+
+    eslint = {},
+    eslint_d = {},
+
     --
     -- Some languages (like rust) have entire language plugins that can be useful:
     --    https://github.com/mrcjkb/rustaceanvim
